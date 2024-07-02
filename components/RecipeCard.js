@@ -6,11 +6,11 @@ export default function RecipeList({obj}) {
     const [need, setNeed] = useState(obj.recipe.yield) 
     return (
         <Card >
-            <Image src={obj.recipe.image} wrapped ui={false} />
+            <Image src={obj.recipe.image} alt="" wrapped ui={false} />
             <Card.Content>
             <Card.Header>{obj.recipe.label}
             </Card.Header>
-            <a target="_blank" className="border-b border-blue-200 text-blue-600" href={obj.recipe.url}>View Recipe</a>
+            <a target="_blank" rel="noreferrer" className="border-b border-blue-200 text-blue-600" href={obj.recipe.url}>View Recipe</a>
             <div className='flex'>
                 
 
